@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.DesktopNav__container {
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+}
+
+.logo {
+  width: 200px;
+}
+
+.DesktopNav__rightContainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.link {
+  margin-right: 5px;
+  padding: 8px;
+  margin-top: 45px;
+}
+.links {
+  text-decoration: none;
+  color: black;
+}
