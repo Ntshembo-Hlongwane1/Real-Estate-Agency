@@ -37,7 +37,7 @@ const HouseDescription = () => {
     data.append("message", message);
 
     const dev_url = "http://127.0.0.1:5000/contact";
-    const production_url = "/contact";
+    const production_url = "/api/contact";
     axios
       .post(production_url, data)
       .then((response) => {
