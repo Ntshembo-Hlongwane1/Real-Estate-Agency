@@ -64,9 +64,11 @@ button:hover {
 @media only screen and (max-width: 784px) {
   .Top__content {
     margin-top: 0px;
+    align-items: center;
+    width: 100vw;
   }
-  .Top__content > img {
-    width: 50%;
+  .main__content > img {
+    width: 40vw;
   }
   .main__content {
     display: block;
@@ -78,8 +80,8 @@ button:hover {
 }
 
 @media only screen and (max-width: 400px) {
-  .Top__content > img {
-    width: 50%;
+  .main__content > img {
+    width: 70vw;
   }
   .main__content {
     display: block;

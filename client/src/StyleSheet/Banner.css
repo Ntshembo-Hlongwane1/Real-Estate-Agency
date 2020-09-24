@@ -8,7 +8,7 @@
 /* MOBILE VIEW */
 @media only screen and (max-width: 784px) {
   .Banner__container > img {
-    width: 440px;
+    width: 100vw;
     height: 200px;
     object-fit: cover;
   }
