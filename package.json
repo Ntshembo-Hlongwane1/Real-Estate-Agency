@@ -1,0 +1,29 @@
+{
+  "name": "realestate",
+  "version": "1.0.0",
+  "description": "This is the server side for Hlongwane Properties",
+  "main": "server.js",
+  "engine": {
+    "node": "14.10.1",
+    "npm": "6.14.8"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "author": "Junior Hlongwane",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "cloudinary": "^1.23.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "formidable": "^1.2.2",
+    "mongoose": "^5.10.6",
+    "nodemailer": "^6.4.11"
+  }
+}
