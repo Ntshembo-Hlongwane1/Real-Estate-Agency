@@ -1,0 +1,19 @@
+.HouseListing__form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin-left: 400px;
+  margin-top: 50px;
+}
+
+.HouseListing__form > input {
+  margin-bottom: 20px;
+  border-radius: 999px;
+  padding: 10px;
+}
+
+.HouseListing__form > select {
+  margin-bottom: 20px;
+  border-radius: 999px;
+  padding: 10px;
+}

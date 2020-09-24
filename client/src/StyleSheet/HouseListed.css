@@ -1,0 +1,15 @@
+.listedHouses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 20px;
+  margin-top: 90px;
+}
+
+.img-conatiner {
+  margin-bottom: 10px;
+}
+
+.House__priceAndDetails {
+  margin-bottom: 40px;
+}

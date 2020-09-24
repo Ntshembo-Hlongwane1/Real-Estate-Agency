@@ -1,6 +1,8 @@
 import React from "react";
 import SearchIcon from "@material-ui/icons/Search";
 import "../StyleSheet/SearchBar.css";
+import { Link } from "react-router-dom";
+
 const DesktopSearchBar = () => {
   return (
     <div className="Search__container">
