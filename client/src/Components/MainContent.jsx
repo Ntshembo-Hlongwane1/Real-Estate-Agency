@@ -20,7 +20,9 @@ const MainContent = () => {
                 Expedita, quasi dolor. Dolores ex fugit rerum similique eveniet
                 voluptas exercitationem magnam.
               </h5>
-              <button>CHECK IT OUT</button>
+              <Link to="/properties/sale">
+                <button>CHECK IT OUT</button>
+              </Link>
             </div>
           </div>
         </div>
@@ -38,7 +40,9 @@ const MainContent = () => {
                 Expedita, quasi dolor. Dolores ex fugit rerum similique eveniet
                 voluptas exercitationem magnam.
               </h5>
-              <button>CHECK IT OUT</button>
+              <Link to="/properties/rent">
+                <button>CHECK IT OUT</button>
+              </Link>
             </div>
           </div>
         </div>
@@ -56,7 +60,9 @@ const MainContent = () => {
                 Expedita, quasi dolor. Dolores ex fugit rerum similique eveniet
                 voluptas exercitationem magnam.
               </h5>
-              <button>CHECK IT OUT</button>
+              <Link to="/contact-us">
+                <button>CHECK IT OUT</button>
+              </Link>
             </div>
           </div>
         </div>

@@ -14,7 +14,7 @@ const HouseSchema = mongoose.Schema({
   },
   house_properties: {
     sale_or_rent: { type: String, required: true },
-    land_size: { type: Number, required: true },
+    housePrice: { type: Number, required: true },
     bedroomNumber: { type: Number, required: true },
     garages: { type: Number, required: true },
     pool: { type: Boolean, required: true },

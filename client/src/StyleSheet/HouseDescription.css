@@ -1,0 +1,99 @@
+.House__detailContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.House__details {
+  padding: 40px;
+}
+
+.more__info {
+  display: flex;
+  margin-top: 10px;
+}
+
+.bedRoomCount {
+  display: flex;
+  align-items: center;
+}
+
+.showersCount {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.parkingSpace {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.house__location {
+  margin-top: 10px;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.house__price {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.houseBedsAndState {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.House__textDetail {
+  width: 500px;
+  margin-top: 20px;
+}
+
+.House__textDetail > h4 {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.Contact__AgentForm {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+
+.Contact__AgentForm > input {
+  margin-bottom: 30px;
+}
+
+.Contact__AgentForm > h3 {
+  margin-bottom: 20px;
+  width: 500px;
+}
+
+/* MOBILE */
+@media only screen and (max-width: 784px) {
+  .House__detailContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .House__textDetail {
+    width: 350px;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .House__detailContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .House__textDetail {
+    width: 300px;
+    margin-top: 20px;
+  }
+  .Contact__AgentForm > input {
+    padding: 10px 16px;
+  }
+}

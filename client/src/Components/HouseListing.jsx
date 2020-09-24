@@ -10,7 +10,7 @@ const HouseListing = () => {
   const [province, setProvince] = useState("");
   const [street, setStreet] = useState("");
   const [sale_or_rent, setSaleOrRent] = useState("");
-  const [land_size, setLandSize] = useState(0);
+  const [housePrice, setHousePrice] = useState(0);
   const [bedroomNumber, setBedRoomNumber] = useState(0);
   const [garages, setGarages] = useState(0);
   const [pool, setPool] = useState(false);
@@ -30,7 +30,7 @@ const HouseListing = () => {
     data.append("province", province);
     data.append("street", street);
     data.append("sale_or_rent", sale_or_rent);
-    data.append("land_size", parseInt(land_size));
+    data.append("housePrice", parseInt(housePrice));
     data.append("bedroomNumber", parseInt(bedroomNumber));
     data.append("garages", parseInt(garages));
     data.append("pool", pool);
@@ -50,6 +50,7 @@ const HouseListing = () => {
   return (
     <div className="HouseListing__container">
       <form className="HouseListing__form">
+        <h1>LIST YOUR PROPERTY</h1>
         <label>name</label>
         <input
           type="text"
@@ -98,11 +99,11 @@ const HouseListing = () => {
           <option>SALE</option>
           <option>RENT</option>
         </select>
-        <label>Land Size</label>
+        <label>House Price</label>
         <input
           type="number"
           placeholder="Please enter in the land size"
-          onChange={(e) => setLandSize(e.target.value)}
+          onChange={(e) => setHousePrice(e.target.value)}
         />
         <label>Number of Bed Rooms</label>
         <select onChange={(e) => setBedRoomNumber(e.target.value)}>

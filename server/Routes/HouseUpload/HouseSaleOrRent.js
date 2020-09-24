@@ -37,7 +37,7 @@ router.post("/api/houseListing", async (request, response) => {
       province,
       street,
       sale_or_rent,
-      land_size,
+      housePrice,
       bedroomNumber,
       garages,
       pool,
@@ -67,7 +67,7 @@ router.post("/api/houseListing", async (request, response) => {
           },
           house_properties: {
             sale_or_rent,
-            land_size,
+            housePrice,
             bedroomNumber,
             garages,
             pool,

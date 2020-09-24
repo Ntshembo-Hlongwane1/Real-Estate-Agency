@@ -1,15 +1,48 @@
+.Container > h3 {
+  margin-top: 50px;
+  padding: 20px;
+  margin-left: 85px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
 .listedHouses {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding: 20px;
-  margin-top: 90px;
+  margin-top: 10px;
 }
 
 .img-conatiner {
   margin-bottom: 10px;
 }
 
+.img-conatiner > img {
+  width: 400px;
+  height: 200px;
+}
+
+.loadingScreen {
+  width: 100%;
+}
+
 .House__priceAndDetails {
   margin-bottom: 40px;
+}
+.House__price {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.House__snipDescription {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 400px) {
+  .img-conatiner > img {
+    width: 350px;
+    height: 200px;
+  }
 }

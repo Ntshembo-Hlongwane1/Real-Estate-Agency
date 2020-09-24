@@ -1,9 +1,14 @@
 import React from "react";
 import SearchIcon from "@material-ui/icons/Search";
 import "../StyleSheet/SearchBar.css";
-import { Link } from "react-router-dom";
+
+import { Link, useHistory } from "react-router-dom";
 
 const DesktopSearchBar = () => {
+  const history = useHistory();
+  const redirectToFilterSearchResult = (location) => {
+    history.push(`/search/results-location/${location}`);
+  };
   return (
     <div className="Search__container">
       <div className="Search__text">
@@ -14,12 +19,17 @@ const DesktopSearchBar = () => {
         <SearchIcon />
       </div>
       <div className="filters">
-        Property Type Filter:
-        <select>
-          <option>House</option>
-          <option>Apartment / Flat</option>
-          <option>Townhouse</option>
-          <option>Farm</option>
+        Filter By Province:
+        <select onChange={(e) => redirectToFilterSearchResult(e.target.value)}>
+          <option>...</option>
+          <option>Limpopo</option>
+          <option>Western Cape</option>
+          <option>Eastern Cape</option>
+          <option>Mpumalanga</option>
+          <option>Northern Cape</option>
+          <option>Johannesburg</option>
+          <option>Pretoria</option>
+          <option>Port Elizabeth</option>
         </select>
       </div>
     </div>

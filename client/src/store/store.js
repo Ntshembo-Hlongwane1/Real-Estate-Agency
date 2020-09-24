@@ -1,5 +1,7 @@
 import { createStore, applyMiddleware, combineReducers, compose } from "redux";
 import thunk from "redux-thunk";
+import filterSearchReducer from "./Reducers/filterSearchReducer";
+import houseDescriptionReducer from "./Reducers/HouseDescriptionReducer";
 import {
   houesOnSaleReducer,
   houseOnRentReducer,
@@ -11,6 +13,8 @@ const initialState = {};
 const reducer = combineReducers({
   housesOnSale: houesOnSaleReducer,
   rentHouses: rentReducer,
+  houseDetails: houseDescriptionReducer,
+  filterSearchResult: filterSearchReducer,
 });
 
 const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;

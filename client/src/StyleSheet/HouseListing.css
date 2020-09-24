@@ -6,6 +6,11 @@
   margin-top: 50px;
 }
 
+.HouseListing__form > h1 {
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
 .HouseListing__form > input {
   margin-bottom: 20px;
   border-radius: 999px;
