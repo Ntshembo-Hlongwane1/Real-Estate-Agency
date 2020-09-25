@@ -48,4 +48,35 @@ router.get("/house/description/:id", async (request, response) => {
     });
 });
 
+router.get("/api/house-search/:query", async (request, response) => {
+  const provinces = [
+    "Limpopo",
+    "Eastern Cape",
+    "Western Cape",
+    "Mpumalanga",
+    "Northern Cape",
+    "Pretoria",
+    "Johannesburg",
+    "Port Elizabeth",
+  ];
+  const query = request.params.query;
+
+  const result = [];
+  for (let counter = 0; counter < provinces.length; counter++) {
+    let currentProvince = provinces[counter];
+    if (query.toLowerCase().includes(currentProvince.toLowerCase())) {
+      result.push(currentProvince);
+    }
+  }
+
+  House.find({ "house_location.province": result[0] })
+    .exec()
+    .then((data) => {
+      return response.status(200).json(data);
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+});
+
 module.exports = router;

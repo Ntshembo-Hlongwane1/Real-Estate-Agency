@@ -12,11 +12,16 @@ import "./StyleSheet/App.css";
 import HouseDescription from "./Components/HouseDescription";
 import FilterSearchResults from "./Components/FilterSearch";
 import Contact from "./Components/Contact-us";
+import SearchResults from "./Components/SearchResults";
 
 const App = () => {
   return (
     <Router>
       <Switch>
+        <Route path="/house/search/:query">
+          <NavBar />
+          <SearchResults />
+        </Route>
         <Route path="/contact-us">
           <NavBar />
           <Contact />
