@@ -1,21 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import SearchIcon from "@material-ui/icons/Search";
 import "../StyleSheet/SearchBar.css";
 
-import { Link, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 const DesktopSearchBar = () => {
   const history = useHistory();
+
   const redirectToFilterSearchResult = (location) => {
     history.push(`/search/results-location/${location}`);
   };
+
   return (
     <div className="Search__container">
       <div className="Search__text">
         <h4>Find Your Ideal Home</h4>
       </div>
       <div className="Search__field">
-        <input type="text" placeholder="Search for city or surbub" />
+        <input type="text" placeholder="Province search supported" />
         <SearchIcon />
       </div>
       <div className="filters">

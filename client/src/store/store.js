@@ -7,6 +7,7 @@ import {
   houseOnRentReducer,
 } from "./Reducers/houseFetchReducer";
 import rentReducer from "./Reducers/houseRentReducer";
+import searchBoxReducer from "./Reducers/SearchBoxReducer";
 
 const initialState = {};
 
@@ -15,6 +16,7 @@ const reducer = combineReducers({
   rentHouses: rentReducer,
   houseDetails: houseDescriptionReducer,
   filterSearchResult: filterSearchReducer,
+  searchBoxResult: searchBoxReducer,
 });
 
 const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;

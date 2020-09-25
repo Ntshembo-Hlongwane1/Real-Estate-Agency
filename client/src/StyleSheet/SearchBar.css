@@ -6,18 +6,19 @@
 .Search__field {
   display: flex;
   align-items: center;
-  margin-left: 540px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 20px;
   padding: 10px;
   height: 30px;
   border: 1px solid lightslategray;
   border-radius: 999px;
-  width: 200px;
+  width: 180px;
 }
 
 .Search__field > input {
   border: none;
-  margin-left: 20px;
+  outline: none;
 }
 .filters {
   margin-top: 10px;
@@ -26,7 +27,6 @@
 .Search__text > h4 {
   font-weight: 900;
   font-size: 20px;
-  margin-left: 20px;
 }
 .SearchBar__links {
   display: flex;
@@ -45,49 +45,44 @@
   .Search__field {
     display: flex;
     align-items: center;
-    margin-left: 15rem;
     height: 30px;
   }
   .filters {
     margin-top: 10px;
-    margin-left: -5px;
   }
 
   .Search__text > h4 {
     font-weight: 900;
     font-size: 20px;
-    margin-left: -90px;
   }
 }
 @media only screen and (max-width: 700px) {
   .Search__field {
     display: flex;
     align-items: center;
-    margin-left: 200px;
+
     height: 30px;
   }
   .filters {
     margin-top: 10px;
-    margin-right: 95px;
   }
 }
 @media only screen and (max-width: 660px) {
   .Search__field {
     display: flex;
     align-items: center;
-    margin-left: 11rem;
+
     height: 30px;
   }
   .filters {
     margin-top: 10px;
-    margin-right: 95px;
   }
 }
 @media only screen and (max-width: 600px) {
   .Search__field {
     display: flex;
     align-items: center;
-    margin-left: 11rem;
+
     height: 30px;
   }
 
@@ -96,7 +91,24 @@
   }
   .filters {
     margin-top: 10px;
-    margin-right: 40px;
+  }
+}
+
+@media only screen and (max-width: 592px) {
+  .Search__text {
+    margin-left: 2px;
+  }
+  .Search__field {
+    width: 230px;
+    height: 30px;
+  }
+
+  .filters {
+    margin-top: 5px;
+  }
+  .Search__text > h4 {
+    font-weight: 900;
+    font-size: 20px;
   }
 }
 
@@ -105,18 +117,16 @@
     margin-left: 80px;
   }
   .Search__field {
-    margin-left: 110px;
     width: 230px;
     height: 30px;
+    margin-right: 15px;
   }
 
   .filters {
-    margin-right: -100px;
     margin-top: 5px;
   }
   .Search__text > h4 {
     font-weight: 900;
     font-size: 20px;
-    margin-left: 40px;
   }
 }
